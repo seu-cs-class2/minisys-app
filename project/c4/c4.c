@@ -1,21 +1,11 @@
-// digits 0xfffffc00
-// keyboard 0xfffffc10
-// timer 0xfffffc20
-// led 0xfffffc60
-// speaker 0xfffffd10
- 
-void init(void) {
-  // init CNT0
-  $0xfffffc20 = 0;
-  $0xfffffc24 = 30; // 30 secs
-}
-
-void display(int number) {
-  // ?
-}
+#include "../../driver/digits.driver.c"
+#include "../../driver/leds.driver.c"
 
 int main(void) {
-  while (1) {
-    // ?
+  int loop;
+  loop = 0;
+  while (loop < 8) {
+    display_digit(loop, 0);
   }
+  return 0;
 }
