@@ -2,15 +2,7 @@
 
 #include "../../driver/switches.driver.c"
 #include "../../driver/leds.driver.c"
-
-void delay(void) {
-  int count;
-  count = 10000;
-  while (count > 0) {
-    count = count - 1;
-  }
-  return;
-}
+#include "../../util/minisys.util.c"
 
 int main(void) {
   int switches;
@@ -25,7 +17,7 @@ int main(void) {
     show_red_leds(reds);
     show_yellow_leds(yellows);
     show_green_leds(greens);
-    delay();
+    delay(100);
   }
   return 0;
 }
