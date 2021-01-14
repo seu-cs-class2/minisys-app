@@ -1,5 +1,7 @@
 # *minisys*-app
 
+Minisys 顶层应用程序。
+
 ## driver
 
 便于调用各接口部件的驱动程序。
@@ -7,6 +9,14 @@
 ## project
 
 应用项目。
+
+## syscall
+
+系统调用。
+
+## util
+
+实用代码段。
 
 ## 附：板上器件端口地址
 
@@ -22,4 +32,3 @@
 | 拨码开关        | 0xFFFFFC70 |
 | 蜂鸣器          | 0xFFFFFD10 |
 | 麦克风          | 0xFFFFFD20 |
-

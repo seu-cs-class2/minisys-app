@@ -1,8 +1,8 @@
-void delay(int ms) {
-  int count;
-  count = 10000;
-  while (count > 0) {
-    count = count - 1;
+// delay 0.5 * halfsec secs
+void delay(int halfsec) {
+  halfsec = halfsec * 500000;
+  while (halfsec > 0) {
+    halfsec = halfsec - 1;
   }
   return;
 }
