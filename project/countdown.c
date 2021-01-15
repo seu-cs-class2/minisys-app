@@ -4,12 +4,16 @@
 
 int main(void) {
   int countdown;
+  int loop;
   countdown = 20;
   
   while (countdown >= 0) {
-    smart_display_digit(countdown);
+    loop = 12500;
+    while (loop > 0) {
+        loop = loop - 1;
+        smart_display_digit(countdown);
+    }
     countdown = countdown - 1;
-    delay(2);
   }
   
   return 0;
