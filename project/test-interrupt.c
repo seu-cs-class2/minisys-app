@@ -9,9 +9,9 @@ int main(void) {
     light_leds(0);
     key = read_keyboard();
     if (key == 4) {
-        light_leds(0xFFFFFFFF);
         __asm("syscall");
-        delay(10);
+        delay(5);
+        light_leds(0x000000F0);
     }
   }
   return 0;
