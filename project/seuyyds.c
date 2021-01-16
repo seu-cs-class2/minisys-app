@@ -21,7 +21,7 @@ int main(void) {
     clear_keyboard();
 
     while (1) {
-        delayer = 12500;
+        delayer = 20000;
         switch_val = read_switch();
         keyboard_val = read_keyboard();
         clear_keyboard();
